@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor(){}
   title = 'dashboard';
+  
+  ngOnInit(): void {
+  }
+total_app=500;  
+
 }

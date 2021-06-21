@@ -1,0 +1,276 @@
+.box {
+    position: relative;
+    display: inline-block;
+    margin: 0.5rem 0.2rem;
+    width: 25%;
+    height: 10em;
+    background-color: #303030;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-align: center;
+}
+
+.box::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.main_content {
+    width: 100%;
+    margin-left: 5px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: left;
+    height: 102%;
+    flex-direction: column;
+    border: 1px solid #303030;
+    border-radius: 9px;
+    background-color: #303030;
+    margin: 20px;
+}
+
+.wrapper .title {
+    font-size: 2em;
+    margin-bottom: 5rem;
+}
+
+.menu {
+    width: 40px;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.menu .list-item {
+    height: 40px;
+    width: 40px;
+    padding: 2px;
+    margin: 4px 0;
+}
+
+.list-item .fa {
+    text-align: center;
+    line-height: 40px;
+}
+
+.list-item a span {
+    width: 0;
+    left: 40px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.6;
+    white-space: nowrap;
+    line-height: 40px;
+    transition: 0.25s;
+}
+
+.list-item a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.list-item a:hover span {
+    width: auto;
+    padding: 0 20px;
+    overflow: visible;
+    color: green;
+}
+
+.list-item {
+    margin-left: 0px;
+}
+
+.home,
+.home span {
+    background: #303030;
+}
+
+.about,
+.about span {
+    background: #303030;
+}
+
+.services,
+.services span {
+    background: #303030;
+}
+
+.potfolio,
+.potfolio span {
+    background: #303030;
+}
+
+.contact,
+.contact span {
+    background: #303030;
+}
+
+.head {
+    margin: 0px;
+    margin-left: 130px;
+    color: white;
+}
+
+div.b {
+    position: absolute;
+    right: 29px;
+    top: 90px;
+    width: 272px;
+    height: 350px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    border-radius: 4%;
+}
+
+.side_image {
+    background-image: url("/assets/istockphoto-1251263509-170667a.jpg");
+    background-repeat: no-repeat, repeat;
+    height: 433px;
+    width: 265px;
+    border: 1px solid #303030;
+}
+
+.graph {
+    background-image: url("/assets/1-CSS-Animations-by-amCharts.jpg");
+    background-repeat: no-repeat, repeat;
+    height: 15em;
+    width: 45em;
+    background-size: cover;
+}
+
+.to_app {
+    width: 314px;
+    height: 15em;
+    background: #303030;
+    margin-left: 46em;
+    margin-top: -223px;
+    border: 1px solid #303030;
+    border: 1px solid #303030;
+    border-radius: 2px
+}
+
+.respons_line1 {
+    height: 8px;
+    background: blueviolet;
+    width: 191px;
+    padding: 0px;
+    margin: auto;
+    border: 1px solid blueviolet;
+    border-radius: 7px;
+}
+
+.respons_line2 {
+    height: 8px;
+    background: cadetblue;
+    width: 191px;
+    padding: 0px;
+    margin: auto;
+    margin-left: 19px;
+    border: 1px solid cadetblue;
+    border-radius: 7px;
+}
+
+.respons_line3 {
+    height: 8px;
+    background: purple;
+    width: 191px;
+    padding: 0px;
+    margin: auto;
+    margin-left: 19px;
+    border: 1px solid purple;
+    border-radius: 7px;
+}
+
+.rcorners1 {
+    background: #73AD21;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.column {
+    float: left;
+    width: 24%;
+    padding: 7px 3px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #303030;
+}
+
+.chart {
+    background-color: #303030;
+    width: 100px;
+    height: 100px;
+    margin-left: 46em;
+    background-color: #303030;
+    width: 315px;
+    height: 206px;
+    margin-top: -190px;
+    border: 1px solid #303030;
+    border-radius: 11px;
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: #303030;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 10px;
+}
+
+.icon-bar a:hover {
+    background-color: #303030;
+}
+
+.active {
+    background-color: #303030;
+}
